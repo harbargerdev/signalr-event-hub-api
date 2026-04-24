@@ -2,9 +2,9 @@
 
 # This stage is used when running from VS in fast mode (Default for Debug configuration)
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
-# Create user 'codea' with a unique UID
-RUN useradd -m -u 1001 -s /bin/bash codea
-USER codea
+# Create user 'fubar' with a unique UID
+RUN useradd -m -u 1001 -s /bin/bash fubar
+USER fubar
 WORKDIR /app
 EXPOSE 8080
 
