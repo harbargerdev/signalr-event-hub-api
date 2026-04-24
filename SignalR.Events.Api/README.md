@@ -6,7 +6,7 @@ This API provides event management with real-time notifications via SignalR.
 
 ### REST API
 
-#### GET /events/{userId}
+#### GET /events/query/{userId}/
 Returns event details for a specific user.
 
 **Response:**
