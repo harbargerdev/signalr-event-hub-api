@@ -47,8 +47,8 @@ public class RandomUserEventWorker : BackgroundService
 
                 _logger.LogInformation("{WorkerName} - Event broadcast for random user: {UserId}", _workerName, randomUserId);
 
-                var delaySeconds = _random.Next(5, 11);
-                await Task.Delay(TimeSpan.FromSeconds(delaySeconds), stoppingToken);
+                var standardDelay = TimeSpan.FromMicroseconds(200);
+                await Task.Delay(standardDelay, stoppingToken);
             }
             catch (Exception ex)
             {
